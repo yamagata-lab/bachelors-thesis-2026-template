@@ -1,4 +1,4 @@
-# 卒業研究中間発表テンプレート 利用ガイド（2026年度）
+# 卒業研究中間発表テンプレート 利用ガイド
 
 ## 中間発表予稿
 
@@ -14,7 +14,7 @@ bachelors-thesis-2026-firstname-familyname/
 ├── .latexmkrc
 ├── .gitignore
 └── midterm/
-    ├── main.tex          # 予稿の本文
+    ├── main.tex          # 予稿の本文（ここを編集していきます）
     ├── main.pdf          # 生成した予稿PDF
     ├── .latexmkrc
     └── figures/
