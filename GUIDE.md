@@ -8,7 +8,7 @@
 ### ファイル構成とリポジトリ設定
 
 ```text
-bachelors-thesis-2026-firstname-familyname/
+bachelors-thesis-yyyy-firstname-familyname/
 ├── README.md
 ├── GUIDE.md
 ├── .latexmkrc
@@ -32,11 +32,12 @@ bachelors-thesis-2026-firstname-familyname/
 | 項目 | 設定内容 |
 | --- | --- |
 | Owner | 学生本人のGitHubアカウント |
-| Repository name | `bachelors-thesis-2026-firstname-familyname` |
+| Repository name | `bachelors-thesis-yyyy-firstname-familyname` |
 | Visibility | **Private** |
 | Collaborator | `yoriyuki-fukui` |
 
-`firstname`を名、`familyname`を姓のローマ字表記に置き換え、リポジトリ名はすべて小文字にします。
+`yyyy`を予稿を作成する年度の西暦4桁、`firstname`を名、`familyname`を姓のローマ字表記に置き換えます。
+リポジトリ名の英字はすべて小文字にします。
 作成後、リポジトリのSettingsから先生（`yoriyuki-fukui`）をcollaboratorに招待します。
 
 リポジトリ直下の`README.md`には、次の2行を記入します。
@@ -66,11 +67,11 @@ bachelors-thesis-2026-firstname-familyname/
 
 1. GitHubで、自分のアカウントに上記の名前で**空のPrivateリポジトリ**を作成します。作成時にはREADME、ライセンス、`.gitignore`を追加しません。
 
-2. ターミナルでテンプレートをcloneします。以下の`firstname-familyname`は自分の名前に置き換えてください。
+2. ターミナルでテンプレートをcloneします。以下の`yyyy`は対象年度、`firstname-familyname`は自分の名前に置き換えてください。
 
    ```sh
-   git clone https://github.com/yamagata-lab/bachelors-thesis-2026-template.git bachelors-thesis-2026-firstname-familyname
-   cd bachelors-thesis-2026-firstname-familyname
+   git clone https://github.com/yamagata-lab/bachelors-thesis-template.git bachelors-thesis-yyyy-firstname-familyname
+   cd bachelors-thesis-yyyy-firstname-familyname
    ```
 
 3. push先を自分のリポジトリへ変更し、ファイルをアップロードします。`学生用PrivateリポジトリのURL`は、手順1で作成したリポジトリのURLに置き換えます。
@@ -101,7 +102,7 @@ bachelors-thesis-2026-firstname-familyname/
 - 欧文・数式：newtx、amsmath
 - 組版・図表：geometry、graphicx、array、tabularx、caption、titlesec、indentfirst
 - その他：etoolbox、url、hyperref
-- 動作確認：LuaHBTeX 1.24.0（TeX Live 2026/macOS）、latexmk 4.88
+- 動作確認済みのバージョン：LuaHBTeX 1.24.0（TeX Live 2026/macOS）、latexmk 4.88
 
 最小構成のTeX環境では、パッケージの追加が必要になる場合があります。
 初回コンパイル時はフォントキャッシュの作成に時間がかかることがあります。
@@ -136,7 +137,7 @@ latexmk -pdf
 ### 最初に変更するところ
 
 `README.md`に氏名・学籍番号を記入します。
-記入後、README内のGUIDEへのリンクと、その下の「（ここを消してください）」を削除し、氏名・学籍番号の2行だけにしてください。
+記入後、README内のGUIDEへのリンクがある行を削除し、氏名・学籍番号の2行だけにしてください。
 
 次に、`midterm/main.tex`の先頭にある次の4項目を変更します。
 
