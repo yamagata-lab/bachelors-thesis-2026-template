@@ -1,0 +1,28 @@
+# LaTeX build intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.xdv
+*.dvi
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.blg
+*.run.xml
+*.bbl
+# Keep PDFs trackable: main.pdf and figures/*.pdf are not ignored.
+
+# OS / editor temporary files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
