@@ -135,7 +135,10 @@ latexmk -pdf
 
 ### 最初に変更するところ
 
-`README.md`に氏名・学籍番号を記入し、`midterm/main.tex`の先頭にある次の4項目を変更します。
+`README.md`に氏名・学籍番号を記入します。
+記入後、README内のGUIDEへのリンクと、その下の「（ここを消してください）」を削除し、氏名・学籍番号の2行だけにしてください。
+
+次に、`midterm/main.tex`の先頭にある次の4項目を変更します。
 
 ```tex
 \newcommand{\presentationnumber}{00}
